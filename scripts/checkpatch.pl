@@ -330,6 +330,9 @@ if ($terse) {
 }
 
 if ($tree) {
+
+	print " $tree\n";
+
 	if (defined $root) {
 		if (!top_of_kernel_tree($root)) {
 			die "$P: $root: --root does not point at a valid tree\n";
